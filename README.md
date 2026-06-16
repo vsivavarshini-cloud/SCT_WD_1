@@ -1,5 +1,5 @@
-**Responsive Landing Page
-**
+Responsive Landing Page
+
 A simple landing page with a fixed navigation bar and interactive UI effects.
 
  Features
