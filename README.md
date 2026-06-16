@@ -9,7 +9,7 @@ A simple landing page with a fixed navigation bar and interactive UI effects.
 * Hover effects
 * Responsive design
 
-## Tech
+## TechStack
 
 HTML, CSS, JavaScript
 
