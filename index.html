@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarePoint Hospital — Compassionate Care, Advanced Medicine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ EMERGENCY BANNER ══════════════════════════════════ -->
+  <div class="emergency-bar" id="emergBar">
+    🚨 Emergency? Call <strong>+1-800-CARE-911</strong> immediately or
+    <a href="#appointment">Book urgent care →</a>
+  </div>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════ -->
+  <nav id="mainNav">
+    <a href="#home" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="white" width="20" height="20">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">CarePoint</span>
+        <span class="logo-tagline">Hospital & Research</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#doctors">Our Doctors</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#appointment" class="nav-appt">Book Appointment</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#departments"  onclick="closeMobile()">Departments</a>
+    <a href="#doctors"      onclick="closeMobile()">Our Doctors</a>
+    <a href="#why"          onclick="closeMobile()">Why Us</a>
+    <a href="#appointment"  onclick="closeMobile()">Book Appointment</a>
+  </div>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Accepting New Patients
+      </div>
+      <h1>Where <em>healing</em> meets modern medicine.</h1>
+      <p class="hero-sub">
+        CarePoint Hospital combines 40 years of clinical expertise with the latest in
+        diagnostic and surgical technology — so you receive care that's both deeply
+        personal and scientifically precise.
+      </p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn-primary">Book an Appointment</a>
+        <a href="#departments" class="btn-outline">Explore Departments</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="h-stat-n">98<sup>%</sup></div>
+          <div class="h-stat-l">Patient satisfaction</div>
+        </div>
+        <div>
+          <div class="h-stat-n">40<sup>+</sup></div>
+          <div class="h-stat-l">Years of service</div>
+        </div>
+        <div>
+          <div class="h-stat-n">200<sup>+</sup></div>
+          <div class="h-stat-l">Specialist doctors</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="card-icon ci-blue">🏥</div>
+        <h3>24/7 Emergency Care</h3>
+        <p>Round-the-clock emergency services with a dedicated trauma team and rapid-response ICU.</p>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon ci-green">🧬</div>
+        <h3>Advanced Diagnostics</h3>
+        <p>MRI, CT, PET scanning and genomic testing — results delivered within hours, not days.</p>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon ci-warm">📋</div>
+        <h3>Personalised Care Plans</h3>
+        <p>Every patient leaves with a clear, tailored treatment roadmap and a direct line to their care team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DEPARTMENTS ════════════════════════════════════════ -->
+  <section id="departments">
+    <div class="reveal">
+      <p class="lbl">Our Specialties</p>
+      <h2 class="sec-title">Comprehensive care<br>under one roof</h2>
+      <p class="sec-body">From preventive health screenings to complex surgical procedures, our 18 departments cover every stage of your health journey.</p>
+    </div>
+    <div class="dept-grid">
+      <div class="dept-card reveal">
+        <div class="dept-icon">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Advanced cardiac imaging, interventional procedures, and heart failure management.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-icon">🧠</div>
+        <h3>Neurology</h3>
+        <p>Stroke care, epilepsy management, and neurosurgical excellence — 24 hours a day.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-icon">🦴</div>
+        <h3>Orthopaedics</h3>
+        <p>Joint replacement, sports injuries, and spinal surgery with minimally invasive techniques.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-icon">👶</div>
+        <h3>Paediatrics</h3>
+        <p>Child-friendly care from newborns through adolescence, with dedicated paediatric ICU.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-icon">🩺</div>
+        <h3>Oncology</h3>
+        <p>Multidisciplinary cancer care, immunotherapy, and clinical trial access at one centre.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-icon">👁️</div>
+        <h3>Ophthalmology</h3>
+        <p>Laser vision correction, retinal surgery, and comprehensive eye health screening.</p>
+        <a href="#appointment" class="dept-link">Book consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DOCTORS ════════════════════════════════════════════ -->
+  <section id="doctors">
+    <div class="reveal">
+      <p class="lbl">Our Team</p>
+      <h2 class="sec-title">Meet the specialists</h2>
+      <p class="sec-body">Board-certified, research-active physicians who bring world-class expertise and genuine compassion to every consultation.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doc-card reveal">
+        <div class="doc-avatar da1">👨‍⚕️</div>
+        <div class="doc-info">
+          <h3>Dr. Arjun Mehta</h3>
+          <div class="doc-spec">Cardiologist</div>
+          <div class="doc-exp">18 years experience</div>
+        </div>
+      </div>
+      <div class="doc-card reveal">
+        <div class="doc-avatar da2">👩‍⚕️</div>
+        <div class="doc-info">
+          <h3>Dr. Priya Sharma</h3>
+          <div class="doc-spec">Neurologist</div>
+          <div class="doc-exp">14 years experience</div>
+        </div>
+      </div>
+      <div class="doc-card reveal">
+        <div class="doc-avatar da3">👨‍⚕️</div>
+        <div class="doc-info">
+          <h3>Dr. Rahul Nair</h3>
+          <div class="doc-spec">Orthopaedic Surgeon</div>
+          <div class="doc-exp">21 years experience</div>
+        </div>
+      </div>
+      <div class="doc-card reveal">
+        <div class="doc-avatar da4">👩‍⚕️</div>
+        <div class="doc-info">
+          <h3>Dr. Kavya Reddy</h3>
+          <div class="doc-spec">Paediatric Specialist</div>
+          <div class="doc-exp">11 years experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY US ════════════════════════════════════════════ -->
+  <section id="why" class="why-section">
+    <div class="reveal">
+      <p class="lbl lbl-light">Why CarePoint</p>
+      <h2 class="sec-title sec-title-light">Care you can count on</h2>
+      <p class="sec-body sec-body-light">We're not the biggest hospital in the city. We're the most intentional one — every system, every protocol, designed around your recovery.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="why-num">24/7</div>
+        <h3>Always Open</h3>
+        <p>Emergency and critical care teams on-site around the clock, every single day of the year.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">≤20</div>
+        <h3>Minutes to a Doctor</h3>
+        <p>Our triage-to-physician time averages under 20 minutes — far below the national average.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">NABL</div>
+        <h3>Accredited Labs</h3>
+        <p>All diagnostics run through NABL-certified laboratories for accuracy you can trust.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">0</div>
+        <h3>Hidden Billing</h3>
+        <p>Clear, itemised bills before treatment begins. No surprise charges, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ APPOINTMENT ════════════════════════════════════════ -->
+  <section id="appointment" class="appt-section">
+    <div class="reveal">
+      <p class="lbl">Book Appointment</p>
+      <h2 class="sec-title">See a doctor today</h2>
+      <p class="sec-body">Fill in the form and our care co-ordinator will confirm your slot within 2 hours.</p>
+    </div>
+    <div class="appt-grid">
+      <form class="appt-form reveal" id="apptForm">
+        <div class="form-2col">
+          <div class="form-row">
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" placeholder="Aryan" required />
+          </div>
+          <div class="form-row">
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" placeholder="Sharma" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" placeholder="+91 98765 43210" required />
+        </div>
+        <div class="form-row">
+          <label for="dept">Department</label>
+          <select id="dept" required>
+            <option value="" disabled selected>Select department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopaedics</option>
+            <option>Paediatrics</option>
+            <option>Oncology</option>
+            <option>Ophthalmology</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-2col">
+          <div class="form-row">
+            <label for="appt-date">Preferred Date</label>
+            <input id="appt-date" type="date" required />
+          </div>
+          <div class="form-row">
+            <label for="appt-time">Preferred Time</label>
+            <select id="appt-time" required>
+              <option value="" disabled selected>Select time</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="notes">Symptoms / Notes (optional)</label>
+          <textarea id="notes" rows="3" placeholder="Briefly describe your concern…"></textarea>
+        </div>
+        <button class="appt-submit" type="submit">Confirm Appointment</button>
+      </form>
+
+      <div class="appt-info reveal">
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>12 Wellness Avenue, Bandra West<br>Mumbai, Maharashtra 400050</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h4>OPD Hours</h4>
+            <p>Monday – Saturday: 8 AM – 8 PM<br>Sunday: 10 AM – 2 PM<br>Emergency: 24 hours</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Call Us</h4>
+            <p>General: +91 22 4000 1234<br>Emergency: +1-800-CARE-911</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">💳</div>
+          <div>
+            <h4>Insurance & Payment</h4>
+            <p>We accept all major health insurance plans. Cashless facility available at admission.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer>
+    <div class="foot-logo">CarePoint Hospital</div>
+    <div class="foot-links">
+      <a href="#departments">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointment">Book Appointment</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>© 2026 CarePoint Hospital & Research Centre. All rights reserved.<br>
+       This site is for informational purposes only and does not constitute medical advice.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
